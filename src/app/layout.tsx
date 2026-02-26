@@ -10,18 +10,18 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Dr. Dienel – Wireframe",
-  description: "Low-fidelity wireframe for Dr. Dienel website",
+  description: "Low-Fidelity-Wireframe für die Website von Dr. Dienel",
 };
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/systemic-question", label: "The Systemic Question" },
-  { href: "/research", label: "Research & Perspectives" },
-  { href: "/diseases", label: "Diseases" },
-  { href: "/about", label: "About" },
-  { href: "/lectures", label: "Lectures" },
+  { href: "/", label: "Startseite" },
+  { href: "/systemic-question", label: "Die Systemfrage" },
+  { href: "/research", label: "Forschung & Perspektiven" },
+  { href: "/diseases", label: "Krankheiten" },
+  { href: "/about", label: "Über mich" },
+  { href: "/lectures", label: "Vorträge" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body className={`${geistSans.variable} antialiased`}>
         {/* NAV */}
         <nav className="border-b-2 border-dashed border-wire-border bg-white">
@@ -61,8 +61,8 @@ export default function RootLayout({
             <div className="grid grid-cols-3 gap-8 text-sm">
               <div>
                 <p className="font-bold text-wire-heading mb-2">Dr. Dienel</p>
-                <p>Nutrition researcher & physician</p>
-                <p>40+ years of medical experience</p>
+                <p>Ernährungsforscher & Arzt</p>
+                <p>Über 40 Jahre medizinische Erfahrung</p>
               </div>
               <div>
                 <p className="font-bold text-wire-heading mb-2">Navigation</p>
@@ -75,19 +75,19 @@ export default function RootLayout({
                 </div>
               </div>
               <div>
-                <p className="font-bold text-wire-heading mb-2">Legal</p>
+                <p className="font-bold text-wire-heading mb-2">Rechtliches</p>
                 <div className="flex flex-col gap-1">
                   <Link href="/legal/impressum" className="hover:text-wire-heading">Impressum</Link>
-                  <Link href="/legal/privacy" className="hover:text-wire-heading">Privacy Policy</Link>
+                  <Link href="/legal/privacy" className="hover:text-wire-heading">Datenschutz</Link>
                 </div>
                 <div className="mt-4">
-                  <p className="font-bold text-wire-heading mb-2">Connect</p>
+                  <p className="font-bold text-wire-heading mb-2">Verbinden</p>
                   <p>[LinkedIn Icon] LinkedIn</p>
                 </div>
               </div>
             </div>
             <div className="mt-8 border-t border-wire-border pt-4 text-center text-xs text-wire-dark">
-              &copy; 2026 Dr. Dienel. All rights reserved.
+              &copy; 2026 Dr. Dienel. Alle Rechte vorbehalten.
             </div>
           </div>
         </footer>

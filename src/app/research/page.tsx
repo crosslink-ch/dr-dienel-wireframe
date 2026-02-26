@@ -12,9 +12,9 @@ export default function Research() {
       {/* PAGE HEADER */}
       <section className="border-b-2 border-dashed border-wire-border bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12">
-          <p className="text-sm text-wire-dark mb-1">Home / Research & Perspectives</p>
+          <p className="text-sm text-wire-dark mb-1">Startseite / Forschung & Perspektiven</p>
           <h1 className="text-3xl font-bold text-wire-heading">
-            Research & Perspectives
+            Forschung & Perspektiven
           </h1>
         </div>
       </section>
@@ -23,35 +23,37 @@ export default function Research() {
       <section className="border-b-2 border-dashed border-wire-border">
         <div className="mx-auto max-w-3xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-4">
-            Modern Research
+            Moderne Forschung
           </h2>
           <p className="mb-4">
-            The last two decades have produced a wealth of research connecting
-            ultra-processed food consumption with chronic disease. Studies on the
-            human microbiome, metabolic pathways, and epigenetic changes are
-            painting an increasingly clear picture.
+            Die letzten zwei Jahrzehnte haben eine Fülle von Forschungsergebnissen
+            hervorgebracht, die den Konsum hochverarbeiteter Lebensmittel mit
+            chronischen Krankheiten verbinden. Studien zum menschlichen Mikrobiom,
+            zu Stoffwechselwegen und epigenetischen Veränderungen zeichnen ein
+            immer klareres Bild.
           </p>
 
-          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">Ultra-Processed Foods</h3>
+          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">Hochverarbeitete Lebensmittel</h3>
           <p className="mb-4">
-            Research now shows that ultra-processed foods make up 50–60% of
-            caloric intake in Western countries. The NOVA classification system
-            has provided a framework for understanding these products and their
-            health impact.
+            Forschungen zeigen, dass hochverarbeitete Lebensmittel 50–60 % der
+            Kalorienaufnahme in westlichen Ländern ausmachen. Das
+            NOVA-Klassifikationssystem bietet einen Rahmen zum Verständnis
+            dieser Produkte und ihrer gesundheitlichen Auswirkungen.
           </p>
 
-          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">The Microbiome</h3>
+          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">Das Mikrobiom</h3>
           <p className="mb-4">
-            The gut microbiome is emerging as a central mediator between diet and
-            disease. Modern diets have been shown to reduce microbial diversity,
-            with cascading effects on immunity, metabolism, and even mental health.
+            Das Darmmikrobiom erweist sich als zentraler Vermittler zwischen
+            Ernährung und Krankheit. Moderne Ernährungsweisen reduzieren
+            nachweislich die mikrobielle Vielfalt, mit weitreichenden Folgen
+            für Immunität, Stoffwechsel und sogar die psychische Gesundheit.
           </p>
 
-          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">Metabolic Consequences</h3>
+          <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">Metabolische Folgen</h3>
           <p className="mb-4">
-            Insulin resistance, chronic inflammation, and hormonal disruption are
-            now understood as interconnected metabolic responses to dietary change
-            rather than isolated conditions.
+            Insulinresistenz, chronische Entzündungen und hormonelle Störungen
+            werden heute als zusammenhängende metabolische Reaktionen auf
+            Ernährungsumstellungen verstanden — nicht als isolierte Erkrankungen.
           </p>
         </div>
       </section>
@@ -60,7 +62,7 @@ export default function Research() {
       <section className="border-b-2 border-dashed border-wire-border">
         <div className="mx-auto max-w-3xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-6">
-            Bibliography / Sources
+            Literaturverzeichnis / Quellen
           </h2>
           <div className="space-y-4">
             {sources.map((s, i) => (
@@ -83,14 +85,14 @@ export default function Research() {
       <section className="bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12 text-center">
           <h2 className="text-xl font-bold text-wire-heading mb-2">
-            Download the Full Whitepaper
+            Das vollständige Whitepaper herunterladen
           </h2>
           <p className="mb-6 text-wire-dark">
-            A comprehensive synthesis of 40 years of clinical observation and
-            modern nutritional science.
+            Eine umfassende Synthese aus 40 Jahren klinischer Beobachtung und
+            moderner Ernährungswissenschaft.
           </p>
           <button className="border-2 border-dashed border-wire-heading bg-white px-6 py-3 font-bold text-wire-heading">
-            Download Whitepaper (PDF)
+            Whitepaper herunterladen (PDF)
           </button>
         </div>
       </section>

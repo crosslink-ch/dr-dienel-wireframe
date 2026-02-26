@@ -1,15 +1,15 @@
 const topics = [
-  { title: "The Systemic Impact of Modern Nutrition", description: "A comprehensive overview of how dietary industrialization drives chronic disease.", tag: "Signature" },
-  { title: "Ultra-Processed Food & Metabolic Syndrome", description: "Understanding the mechanisms behind the global metabolic health crisis.", tag: "Medical" },
-  { title: "The Microbiome Revolution", description: "What gut science tells us about the future of preventive medicine.", tag: "Research" },
-  { title: "Nutrition in Geriatric Care", description: "Practical approaches to dietary intervention for aging populations.", tag: "Clinical" },
+  { title: "Die systemischen Auswirkungen moderner Ernährung", description: "Ein umfassender Überblick darüber, wie die Industrialisierung der Ernährung chronische Krankheiten antreibt.", tag: "Signature" },
+  { title: "Hochverarbeitete Lebensmittel & Metabolisches Syndrom", description: "Die Mechanismen hinter der globalen metabolischen Gesundheitskrise verstehen.", tag: "Medizin" },
+  { title: "Die Mikrobiom-Revolution", description: "Was die Darmforschung über die Zukunft der Präventivmedizin verrät.", tag: "Forschung" },
+  { title: "Ernährung in der Geriatrie", description: "Praktische Ansätze zur Ernährungsintervention bei alternden Bevölkerungsgruppen.", tag: "Klinisch" },
 ];
 
 const events = [
-  { date: "March 15, 2026", title: "Medical Conference Munich", location: "Munich, Germany", status: "Confirmed" },
-  { date: "April 8, 2026", title: "Public Health Symposium", location: "Zurich, Switzerland", status: "Confirmed" },
-  { date: "May 22, 2026", title: "Nutrition Science Congress", location: "Vienna, Austria", status: "Pending" },
-  { date: "June 10, 2026", title: "Geriatric Medicine Forum", location: "Berlin, Germany", status: "Pending" },
+  { date: "15. März 2026", title: "Medizinische Konferenz München", location: "München, Deutschland", status: "Bestätigt" },
+  { date: "8. April 2026", title: "Public-Health-Symposium", location: "Zürich, Schweiz", status: "Bestätigt" },
+  { date: "22. Mai 2026", title: "Ernährungswissenschaftlicher Kongress", location: "Wien, Österreich", status: "Ausstehend" },
+  { date: "10. Juni 2026", title: "Forum für Geriatrische Medizin", location: "Berlin, Deutschland", status: "Ausstehend" },
 ];
 
 export default function Lectures() {
@@ -18,12 +18,12 @@ export default function Lectures() {
       {/* PAGE HEADER */}
       <section className="border-b-2 border-dashed border-wire-border bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12">
-          <p className="text-sm text-wire-dark mb-1">Home / Lectures</p>
+          <p className="text-sm text-wire-dark mb-1">Startseite / Vorträge</p>
           <h1 className="text-3xl font-bold text-wire-heading">
-            Lectures & Professional Audiences
+            Vorträge & Fachpublikum
           </h1>
           <p className="mt-2 text-wire-dark">
-            Dr. Dienel is available for conferences, symposia, and professional events.
+            Dr. Dienel steht für Konferenzen, Symposien und Fachveranstaltungen zur Verfügung.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function Lectures() {
       <section className="border-b-2 border-dashed border-wire-border">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-6">
-            Lecture Topics
+            Vortragsthemen
           </h2>
           <div className="grid grid-cols-2 gap-6">
             {topics.map((t, i) => (
@@ -57,20 +57,20 @@ export default function Lectures() {
       <section className="border-b-2 border-dashed border-wire-border bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-6">
-            References
+            Referenzen
           </h2>
           <div className="grid grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
               <div key={i} className="bg-white border-2 border-dashed border-wire-border p-6">
                 <p className="italic text-sm mb-4">
-                  &quot;Placeholder testimonial text from a conference organizer or
-                  attendee praising Dr. Dienel&apos;s presentation.&quot;
+                  &quot;Platzhalter-Testimonial eines Konferenzveranstalters oder
+                  Teilnehmers, der den Vortrag von Dr. Dienel lobt.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-wire-placeholder border border-wire-border" />
                   <div>
-                    <p className="text-sm font-bold text-wire-heading">Name Surname</p>
-                    <p className="text-xs text-wire-dark">Organization</p>
+                    <p className="text-sm font-bold text-wire-heading">Vorname Nachname</p>
+                    <p className="text-xs text-wire-dark">Organisation</p>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function Lectures() {
       <section className="border-b-2 border-dashed border-wire-border">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-6">
-            Upcoming Events
+            Kommende Veranstaltungen
           </h2>
           <div className="space-y-4">
             {events.map((e, i) => (
@@ -100,7 +100,7 @@ export default function Lectures() {
                     <p className="text-sm text-wire-dark">{e.location}</p>
                   </div>
                 </div>
-                <span className={`border px-3 py-1 text-xs ${e.status === "Confirmed" ? "border-wire-heading text-wire-heading" : "border-wire-accent text-wire-dark"}`}>
+                <span className={`border px-3 py-1 text-xs ${e.status === "Bestätigt" ? "border-wire-heading text-wire-heading" : "border-wire-accent text-wire-dark"}`}>
                   {e.status}
                 </span>
               </div>
@@ -113,10 +113,10 @@ export default function Lectures() {
       <section>
         <div className="mx-auto max-w-3xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-2">
-            Request a Lecture
+            Vortrag anfragen
           </h2>
           <p className="text-wire-dark mb-8">
-            Interested in having Dr. Dienel speak at your event? Fill out the form below.
+            Sie möchten Dr. Dienel als Redner für Ihre Veranstaltung buchen? Füllen Sie das untenstehende Formular aus.
           </p>
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -125,24 +125,24 @@ export default function Lectures() {
                 <div className="h-10 w-full border-2 border-dashed border-wire-border bg-white" />
               </div>
               <div>
-                <label className="block text-sm font-bold text-wire-heading mb-1">Organization</label>
+                <label className="block text-sm font-bold text-wire-heading mb-1">Organisation</label>
                 <div className="h-10 w-full border-2 border-dashed border-wire-border bg-white" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-bold text-wire-heading mb-1">Email</label>
+              <label className="block text-sm font-bold text-wire-heading mb-1">E-Mail</label>
               <div className="h-10 w-full border-2 border-dashed border-wire-border bg-white" />
             </div>
             <div>
-              <label className="block text-sm font-bold text-wire-heading mb-1">Event Type & Date</label>
+              <label className="block text-sm font-bold text-wire-heading mb-1">Veranstaltungsart & Datum</label>
               <div className="h-10 w-full border-2 border-dashed border-wire-border bg-white" />
             </div>
             <div>
-              <label className="block text-sm font-bold text-wire-heading mb-1">Message</label>
+              <label className="block text-sm font-bold text-wire-heading mb-1">Nachricht</label>
               <div className="h-32 w-full border-2 border-dashed border-wire-border bg-white" />
             </div>
             <button className="border-2 border-dashed border-wire-heading px-6 py-3 font-bold text-wire-heading">
-              Submit Inquiry
+              Anfrage absenden
             </button>
           </div>
         </div>

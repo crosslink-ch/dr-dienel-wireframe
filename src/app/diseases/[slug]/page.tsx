@@ -1,12 +1,12 @@
 const diseases: Record<string, { title: string; content: string }> = {
-  "metabolic-syndrome": { title: "Metabolic Syndrome", content: "A cluster of conditions — increased blood pressure, high blood sugar, excess body fat around the waist, and abnormal cholesterol levels — that occur together, increasing the risk of heart disease, stroke, and type 2 diabetes." },
-  "type-2-diabetes": { title: "Type 2 Diabetes", content: "Once considered a disease of old age, type 2 diabetes now affects increasingly younger populations. The connection between ultra-processed food consumption and insulin resistance is well-documented." },
-  "cardiovascular-disease": { title: "Cardiovascular Disease", content: "Heart disease remains the leading cause of death globally. Research increasingly points to dietary factors — beyond simple cholesterol — as primary drivers." },
-  "autoimmune-disorders": { title: "Autoimmune Disorders", content: "The dramatic rise in autoimmune conditions correlates with changes in gut microbiome composition driven by modern dietary patterns." },
-  "cognitive-decline": { title: "Cognitive Decline & Dementia", content: "Alzheimer's disease has been called 'Type 3 Diabetes' by researchers who have identified metabolic dysfunction as a key driver of cognitive deterioration." },
-  "obesity": { title: "Obesity", content: "Obesity is not simply a matter of willpower. Ultra-processed foods are engineered to override natural appetite regulation, creating a metabolic trap." },
-  "chronic-inflammation": { title: "Chronic Inflammation", content: "Low-grade chronic inflammation is the common thread connecting most modern degenerative diseases. Diet is its primary modulator." },
-  "digestive-disorders": { title: "Digestive Disorders", content: "The gut is where dietary damage begins. Conditions like IBS, Crohn's, and leaky gut syndrome have exploded in prevalence alongside dietary industrialization." },
+  "metabolisches-syndrom": { title: "Metabolisches Syndrom", content: "Ein Bündel von Erkrankungen — erhöhter Blutdruck, hoher Blutzucker, überschüssiges Körperfett im Bauchbereich und abnormale Cholesterinwerte — die zusammen auftreten und das Risiko für Herzerkrankungen, Schlaganfall und Typ-2-Diabetes erhöhen." },
+  "typ-2-diabetes": { title: "Typ-2-Diabetes", content: "Einst als Alterskrankheit betrachtet, betrifft Typ-2-Diabetes heute zunehmend jüngere Bevölkerungsgruppen. Der Zusammenhang zwischen dem Konsum hochverarbeiteter Lebensmittel und Insulinresistenz ist gut dokumentiert." },
+  "herz-kreislauf-erkrankungen": { title: "Herz-Kreislauf-Erkrankungen", content: "Herzerkrankungen bleiben weltweit die häufigste Todesursache. Forschungen weisen zunehmend auf Ernährungsfaktoren — über einfaches Cholesterin hinaus — als primäre Treiber hin." },
+  "autoimmunerkrankungen": { title: "Autoimmunerkrankungen", content: "Der dramatische Anstieg von Autoimmunerkrankungen korreliert mit Veränderungen der Darmmikrobiom-Zusammensetzung, die durch moderne Ernährungsmuster verursacht werden." },
+  "kognitiver-verfall": { title: "Kognitiver Verfall & Demenz", content: "Die Alzheimer-Krankheit wurde von Forschern als ‚Typ-3-Diabetes' bezeichnet, die metabolische Dysfunktion als Schlüsselfaktor für den kognitiven Abbau identifiziert haben." },
+  "adipositas": { title: "Adipositas", content: "Adipositas ist nicht einfach eine Frage der Willenskraft. Hochverarbeitete Lebensmittel sind darauf ausgelegt, die natürliche Appetitregulation auszuhebeln und eine metabolische Falle zu schaffen." },
+  "chronische-entzuendungen": { title: "Chronische Entzündungen", content: "Niedriggradige chronische Entzündungen sind der gemeinsame Nenner, der die meisten modernen degenerativen Erkrankungen verbindet. Die Ernährung ist ihr wichtigster Modulator." },
+  "verdauungsstoerungen": { title: "Verdauungsstörungen", content: "Der Darm ist der Ort, an dem ernährungsbedingte Schäden beginnen. Erkrankungen wie Reizdarm, Morbus Crohn und Leaky-Gut-Syndrom haben parallel zur Industrialisierung der Ernährung explosionsartig zugenommen." },
 };
 
 export default async function DiseaseDetail({
@@ -16,8 +16,8 @@ export default async function DiseaseDetail({
 }) {
   const { slug } = await params;
   const disease = diseases[slug] || {
-    title: "Disease",
-    content: "Content for this condition.",
+    title: "Krankheit",
+    content: "Inhalt zu dieser Erkrankung.",
   };
 
   return (
@@ -26,7 +26,7 @@ export default async function DiseaseDetail({
       <section className="border-b-2 border-dashed border-wire-border bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <p className="text-sm text-wire-dark mb-1">
-            Home / Diseases / {disease.title}
+            Startseite / Krankheiten / {disease.title}
           </p>
           <h1 className="text-3xl font-bold text-wire-heading">
             {disease.title}
@@ -38,13 +38,13 @@ export default async function DiseaseDetail({
       <section>
         <div className="mx-auto max-w-3xl px-6 py-12">
           <div className="my-8 border-2 border-dashed border-wire-border bg-wire-placeholder p-8 text-center text-wire-dark h-48 flex items-center justify-center">
-            [Header Image / Illustration]
+            [Titelbild / Illustration]
           </div>
 
           <p className="mb-6 text-lg">{disease.content}</p>
 
           <h2 className="text-xl font-bold text-wire-heading mb-4 mt-8">
-            Causes & Dietary Connection
+            Ursachen & Ernährungszusammenhang
           </h2>
           <div className="space-y-3 mb-8">
             <div className="h-4 w-full bg-wire-placeholder rounded" />
@@ -54,7 +54,7 @@ export default async function DiseaseDetail({
           </div>
 
           <h2 className="text-xl font-bold text-wire-heading mb-4">
-            Health Tips & Prevention
+            Gesundheitstipps & Prävention
           </h2>
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-3">
@@ -72,7 +72,7 @@ export default async function DiseaseDetail({
           </div>
 
           <h2 className="text-xl font-bold text-wire-heading mb-4">
-            Further Reading
+            Weiterführende Literatur
           </h2>
           <div className="space-y-2">
             <div className="border-l-4 border-wire-accent pl-4 py-1">

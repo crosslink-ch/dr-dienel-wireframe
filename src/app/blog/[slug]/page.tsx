@@ -22,7 +22,7 @@ export default async function BlogPost({
               <Link href="/blog" className="hover:text-wire-heading">
                 Blog
               </Link>{" "}
-              / Article
+              / Artikel
             </p>
             <h1 className="text-3xl font-bold text-wire-heading mt-2">
               {title}
@@ -33,9 +33,9 @@ export default async function BlogPost({
                 <span>Dr. Dienel</span>
               </div>
               <span>|</span>
-              <span>February 20, 2026</span>
+              <span>20. Februar 2026</span>
               <span>|</span>
-              <span>5 min read</span>
+              <span>5 Min. Lesezeit</span>
             </div>
           </div>
         </section>
@@ -43,21 +43,21 @@ export default async function BlogPost({
         {/* Featured image */}
         <div className="mx-auto max-w-3xl px-6 pt-8">
           <div className="h-64 bg-wire-placeholder border-2 border-dashed border-wire-border rounded flex items-center justify-center text-wire-dark">
-            [Featured Image]
+            [Titelbild]
           </div>
         </div>
 
         {/* Content */}
         <div className="mx-auto max-w-3xl px-6 py-8">
           <p className="text-lg mb-6">
-            This is the introduction paragraph of the blog post. It provides a
-            compelling overview of the topic and draws the reader in with a clear
-            thesis statement about the relationship between modern nutrition and
-            health outcomes.
+            Dies ist der Einleitungsabsatz des Blogbeitrags. Er bietet einen
+            überzeugenden Überblick über das Thema und zieht den Leser mit einer
+            klaren These über den Zusammenhang zwischen moderner Ernährung und
+            gesundheitlichen Folgen hinein.
           </p>
 
           <h2 className="text-xl font-bold text-wire-heading mb-4 mt-8">
-            Section Heading
+            Abschnittsüberschrift
           </h2>
           <div className="space-y-3 mb-6">
             <div className="h-4 w-full bg-wire-placeholder rounded" />
@@ -67,18 +67,19 @@ export default async function BlogPost({
           </div>
 
           <p className="mb-6">
-            Additional body text that elaborates on the main points. This
-            section includes specific examples, data references, and clinical
-            observations that support the article&apos;s central argument.
+            Zusätzlicher Fließtext, der die Hauptpunkte vertieft. Dieser
+            Abschnitt enthält konkrete Beispiele, Datenreferenzen und klinische
+            Beobachtungen, die das zentrale Argument des Artikels unterstützen.
           </p>
 
           <blockquote className="border-l-4 border-wire-accent pl-6 my-8 italic text-wire-dark">
-            &quot;A compelling pull-quote from the article that captures a key
-            insight or memorable statement from Dr. Dienel.&quot;
+            &quot;Ein überzeugendes Zitat aus dem Artikel, das eine zentrale
+            Erkenntnis oder eine einprägsame Aussage von Dr. Dienel
+            einfängt.&quot;
           </blockquote>
 
           <h2 className="text-xl font-bold text-wire-heading mb-4 mt-8">
-            Another Section
+            Weiterer Abschnitt
           </h2>
           <div className="space-y-3 mb-6">
             <div className="h-4 w-full bg-wire-placeholder rounded" />
@@ -87,7 +88,7 @@ export default async function BlogPost({
           </div>
 
           <div className="my-8 border-2 border-dashed border-wire-border bg-wire-placeholder p-8 text-center text-wire-dark h-48 flex items-center justify-center">
-            [Inline Image / Chart]
+            [Inline-Bild / Grafik]
           </div>
 
           <div className="space-y-3 mb-6">
@@ -100,17 +101,17 @@ export default async function BlogPost({
           <div className="mt-12 border-t-2 border-dashed border-wire-border pt-6 flex items-center justify-between">
             <div className="flex gap-2">
               <span className="border border-wire-accent px-3 py-1 text-xs text-wire-dark">
-                Nutrition
+                Ernährung
               </span>
               <span className="border border-wire-accent px-3 py-1 text-xs text-wire-dark">
-                Research
+                Forschung
               </span>
               <span className="border border-wire-accent px-3 py-1 text-xs text-wire-dark">
-                Prevention
+                Prävention
               </span>
             </div>
             <div className="flex gap-3 text-sm text-wire-dark">
-              [Share icons]
+              [Teilen-Icons]
             </div>
           </div>
         </div>

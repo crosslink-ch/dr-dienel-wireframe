@@ -1,10 +1,10 @@
 export default function About() {
   const timeline = [
-    { year: "1984", event: "Completed medical degree" },
-    { year: "1985–1995", event: "General practice and internal medicine" },
-    { year: "1996–2010", event: "Specialized in geriatric medicine" },
-    { year: "2010–present", event: "Senior attending physician in geriatrics" },
-    { year: "2026", event: "Retirement — full-time dedication to nutrition education" },
+    { year: "1984", event: "Abschluss des Medizinstudiums" },
+    { year: "1985–1995", event: "Allgemeinmedizin und Innere Medizin" },
+    { year: "1996–2010", event: "Spezialisierung auf Geriatrie" },
+    { year: "2010–heute", event: "Leitender Oberarzt in der Geriatrie" },
+    { year: "2026", event: "Ruhestand — volle Widmung an Ernährungsaufklärung" },
   ];
 
   return (
@@ -12,9 +12,9 @@ export default function About() {
       {/* PAGE HEADER */}
       <section className="border-b-2 border-dashed border-wire-border bg-wire-placeholder">
         <div className="mx-auto max-w-6xl px-6 py-12">
-          <p className="text-sm text-wire-dark mb-1">Home / About</p>
+          <p className="text-sm text-wire-dark mb-1">Startseite / Über mich</p>
           <h1 className="text-3xl font-bold text-wire-heading">
-            About Dr. Dienel
+            Über Dr. Dienel
           </h1>
         </div>
       </section>
@@ -25,69 +25,70 @@ export default function About() {
           <div className="grid grid-cols-3 gap-12">
             <div className="col-span-1">
               <div className="aspect-[3/4] bg-wire-placeholder border-2 border-dashed border-wire-border rounded flex items-center justify-center text-wire-dark">
-                [Professional Photo]
+                [Professionelles Foto]
               </div>
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <span className="h-4 w-4 border-2 border-dashed border-wire-border inline-block" />
-                  <span>Senior Attending Physician</span>
+                  <span>Leitender Oberarzt</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="h-4 w-4 border-2 border-dashed border-wire-border inline-block" />
-                  <span>Geriatric Medicine</span>
+                  <span>Geriatrische Medizin</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="h-4 w-4 border-2 border-dashed border-wire-border inline-block" />
-                  <span>40+ Years Experience</span>
+                  <span>Über 40 Jahre Erfahrung</span>
                 </div>
               </div>
             </div>
             <div className="col-span-2">
               <h2 className="text-2xl font-bold text-wire-heading mb-4">
-                A Lifetime in Medicine. A Mission for Change.
+                Ein Leben in der Medizin. Eine Mission für Veränderung.
               </h2>
               <p className="mb-4">
-                Dr. Dienel has spent over four decades observing the devastating
-                effects of modern nutrition on human health. As a senior
-                attending physician in geriatrics, he has witnessed firsthand how
-                dietary changes have accelerated degenerative disease across
-                generations.
+                Dr. Dienel hat über vier Jahrzehnte die verheerenden Auswirkungen
+                moderner Ernährung auf die menschliche Gesundheit beobachtet. Als
+                leitender Oberarzt in der Geriatrie hat er aus erster Hand
+                miterlebt, wie Ernährungsumstellungen degenerative Erkrankungen
+                über Generationen hinweg beschleunigt haben.
               </p>
               <p className="mb-4">
-                His approach combines clinical observation with modern
-                nutritional science to challenge the status quo of preventive
-                medicine.
+                Sein Ansatz verbindet klinische Beobachtung mit moderner
+                Ernährungswissenschaft, um den Status quo der Präventivmedizin
+                herauszufordern.
               </p>
 
               <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">
                 Motivation
               </h3>
               <p className="mb-4">
-                After decades of treating the consequences of poor nutrition,
-                Dr. Dienel is now focused on addressing the root cause. His
-                mission is to educate both the medical community and the general
-                public about the systemic impact of dietary change.
+                Nach Jahrzehnten der Behandlung von Folgen schlechter Ernährung
+                konzentriert sich Dr. Dienel nun darauf, die Ursache anzugehen.
+                Seine Mission ist es, sowohl die medizinische Gemeinschaft als
+                auch die breite Öffentlichkeit über die systemischen Auswirkungen
+                der Ernährungsumstellung aufzuklären.
               </p>
 
               <h3 className="text-lg font-bold text-wire-heading mt-8 mb-3">
-                Areas of Expertise
+                Fachliche Schwerpunkte
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 h-2 w-2 shrink-0 bg-wire-accent rounded-full" />
-                  Geriatric medicine and age-related disease
+                  Geriatrische Medizin und altersbedingte Erkrankungen
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 h-2 w-2 shrink-0 bg-wire-accent rounded-full" />
-                  Nutritional impact on metabolic health
+                  Ernährungseinfluss auf die metabolische Gesundheit
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 h-2 w-2 shrink-0 bg-wire-accent rounded-full" />
-                  Ultra-processed food and chronic disease
+                  Hochverarbeitete Lebensmittel und chronische Krankheiten
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 h-2 w-2 shrink-0 bg-wire-accent rounded-full" />
-                  Preventive medicine and public health education
+                  Präventivmedizin und Gesundheitsaufklärung
                 </li>
               </ul>
             </div>
@@ -99,7 +100,7 @@ export default function About() {
       <section>
         <div className="mx-auto max-w-3xl px-6 py-12">
           <h2 className="text-2xl font-bold text-wire-heading mb-8 text-center">
-            Career Path
+            Werdegang
           </h2>
           <div className="space-y-0">
             {timeline.map((item, i) => (

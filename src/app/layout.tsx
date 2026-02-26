@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
+// Random change
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

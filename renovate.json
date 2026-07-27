@@ -5,7 +5,7 @@
   ],
   "timezone": "Europe/Zagreb",
   "schedule": [
-    "before 10am on Monday"
+    "* * * * 1"
   ],
   "dependencyDashboard": true,
   "labels": [
@@ -20,41 +20,21 @@
   },
   "packageRules": [
     {
-      "groupName": "Payload CMS",
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-non-major",
       "matchPackageNames": [
-        "@payloadcms/**",
-        "payload"
-      ]
-    },
-    {
-      "groupName": "React",
-      "matchPackageNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom"
-      ]
-    },
-    {
-      "groupName": "Playwright",
-      "matchPackageNames": [
-        "playwright",
-        "playwright-core",
-        "@playwright/**"
-      ]
-    },
-    {
-      "groupName": "Radix UI",
-      "matchPackageNames": [
-        "@radix-ui/**"
-      ]
-    },
-    {
-      "groupName": "Tailwind CSS",
-      "matchPackageNames": [
-        "tailwindcss",
-        "@tailwindcss/**"
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "pin",
+        "digest",
+        "patch",
+        "minor"
       ]
     }
-  ]
+  ],
+  "minimumReleaseAge": "7 days",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
+  "internalChecksFilter": "strict",
+  "prCreation": "not-pending"
 }
